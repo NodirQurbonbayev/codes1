@@ -124,3 +124,16 @@ func main() {
 	}
 	fmt.Printf("Raqamlar yig'indisi: %d\n", sum)
 }
+package main
+
+import "fmt"
+//sonlani o'rnini almashtirish dasturi
+ func main() {
+     var number int
+     fmt.Print("2 xonali son kiriting: ")
+     fmt.Scan(&number)
+     n := number % 10
+     new := (number / 10) % 10
+     newNum := n*10 + new
+     fmt.Printf(" %d\n",newNum )
+ }
