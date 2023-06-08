@@ -210,6 +210,7 @@ func main() {
 package main
 
 import "fmt"
+// raqamlar yig'indisni topiish
 func main() {
 	var number, res int
 	fmt.Scan(&number)
@@ -219,5 +220,16 @@ func main() {
 		number = (number - last) / 10
 		fmt.Println(res)
 	}
+	//2.variant
+	func main() {
+		var number, res int
+		fmt.Scan(&number)
+		res = number / 100000
+		res += int(number/10000) % 10
+		res += int(number/1000) % 10
+		res += int(number/100) % 10
+		res += int(number/10) % 10
+		res += number % 10
+		fmt.Println(res)
 
 }
