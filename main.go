@@ -207,3 +207,17 @@ func main() {
 	res := string(input[len(input)-1]) + string(input[1:len(input)-1]) + string(input[0])
 	fmt.Println(res)
 }
+package main
+
+import "fmt"
+func main() {
+	var number, res int
+	fmt.Scan(&number)
+	for number != 0 {
+		last := number % 10
+		res += last
+		number = (number - last) / 10
+		fmt.Println(res)
+	}
+
+}
