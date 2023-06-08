@@ -246,4 +246,15 @@ import "fmt"
 			fmt.Println(-a, -b, -c)
 		}
 	}
-	
+package main
+
+import "fmt"
+//string (nodir) o'rtasiga chiqaruvchi dastur
+
+	func main() {
+		var string1, string2 string
+		fmt.Scan(&string1, &string2)
+		res := string1[:len(string1)/2] + string2 + string1[len(string1)/2:]
+		fmt.Println(res)
+}
+
