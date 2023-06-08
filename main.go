@@ -156,3 +156,17 @@ import "fmt"
 
     fmt.Printf("%d\n",newNumber)
 }
+package main
+
+import "fmt"
+//Sekundni chiqaruvchi dastur
+func main() {
+    var seconds int
+    fmt.Print("sekundlarni kiriting: ")
+    fmt.Scan(&seconds)
+
+    hours := seconds / 3600
+    minutes := (seconds % 3600) / 60
+    seconds = seconds % 60
+   fmt.Printf("%d hour %d minute %d second\n", hours, minutes, seconds)
+}
