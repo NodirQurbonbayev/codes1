@@ -257,4 +257,19 @@ import "fmt"
 		res := string1[:len(string1)/2] + string2 + string1[len(string1)/2:]
 		fmt.Println(res)
 }
+package main
 
+import "fmt"
+//1 dan n gacha bolgan juft sonlarni sonini chiqarish dasturi
+
+	func main() {
+		var n int
+		fmt.Scan(&n)
+		count := 0
+		for i := 1; i <= n; i++ {
+			if i%2 == 0 {
+				count++
+			}
+		}
+		fmt.Printf("Juft=%v\n", count)
+}
