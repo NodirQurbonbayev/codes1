@@ -76,3 +76,23 @@ func main()  {
 	fmt.Printf("bool qiymat=%t\n",x)
 
 }
+package main
+
+import "fmt"
+
+//bahoni tekshiruvchi kod
+func main()  {
+	var a int
+	fmt.Scan(&a)
+	if a>80 && a<100 {
+		fmt.Println("Bahoyingiz 5",)
+	} else if a>60 && a<80 {
+		fmt.Println("Bahoyingiz 4")
+	} else if a>40 && a<60 {
+		fmt.Println("Bahoyingiz 3")
+	} else if a>0 && a<40 {
+		fmt.Println("Bahoyingiz 2")
+	} else {
+		fmt.Println("0 dan kichkina son kiritish mumkin emas")
+	}
+} 
