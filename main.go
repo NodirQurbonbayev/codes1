@@ -111,3 +111,16 @@ func main() {
 		fmt.Println("harf emas")
 	}
 }
+package main
+
+import "fmt"
+// Raqamlar yig'indisini toping
+func main() {
+	var n int
+	var sum int
+	fmt.Scan(&n)
+	for i := 0; i <= n; i++ {
+		sum += i
+	}
+	fmt.Printf("Raqamlar yig'indisi: %d\n", sum)
+}
