@@ -40,3 +40,21 @@ func main() {
 	}
 	fmt.Printf("uzunligi:%v\n", strlength)
 }
+package main 
+
+import "fmt"
+ //ikkita sonni bo'lganda yuqoriga qarab yaxtlishlash
+func main() {
+    var a, b float64
+    fmt.Println("birinchi sonni kiriting: ")
+    fmt.Scan(&a)
+    fmt.Println("ikkinchi sonni kiriting: ")
+    fmt.Scan(&b)
+
+    if b != 0 {
+        natija := a / b
+        fmt.Printf("Natija: %.2f\n", natija)
+    } else {
+        fmt.Println("Xatolik: nolga bo'lish mumkin emas!")
+    }
+}
