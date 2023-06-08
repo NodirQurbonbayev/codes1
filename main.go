@@ -137,3 +137,22 @@ import "fmt"
      newNum := n*10 + new
      fmt.Printf(" %d\n",newNum )
  }
+ package main
+
+ import "fmt"
+ func main() {
+    var a int
+    fmt.Println("7 xonali son kiriting: ")
+    fmt.Scan(&a)
+
+    num1:= a % 10000000
+    num2 := (a / 1000000) % 10
+	num3 := (a / 100000) % 10
+	num4 := (a / 10000) % 10
+	num5 := (a / 1000) % 10
+	num6 := (a / 100) % 10
+	num7 := (a / 10) % 10
+    newNumber := firstDigit*10 + secondDigit
+
+    fmt.Printf("%d\n",newNumber)
+}
