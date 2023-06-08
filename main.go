@@ -58,3 +58,21 @@ func main() {
         fmt.Println("Xatolik: nolga bo'lish mumkin emas!")
     }
 }
+package main
+
+import "fmt"
+
+//int float bool qiymatga o'zgartirish
+func main()  {
+	var a float64
+	fmt.Scan(&a)
+
+	fmt.Printf("Int qiymati=%d\n",int(a))
+	fmt.Printf("Float qiymat=%f\n",a)
+	var x bool
+	if a!=0 {
+		x=true
+	}
+	fmt.Printf("bool qiymat=%t\n",x)
+
+}
