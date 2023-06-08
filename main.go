@@ -14,3 +14,14 @@ func main() {
 	}
 
 }
+package main
+
+import "fmt"
+
+// uzunligini aniqlaydigan
+func main() {
+	var str string
+	fmt.Scan(&str)
+	length := len(str)
+	fmt.Println(length)
+}
