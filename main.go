@@ -233,3 +233,17 @@ func main() {
 		fmt.Println(res)
 
 }
+package main
+
+import "fmt"
+// ikkilanganini chiqaradigan dastur
+	func main() {
+		var a, b, c int
+		fmt.Scan(&a, &b, &c)
+		if a < b && b < c {
+			fmt.Println(2*a, a*b, 2*c)
+		} else {
+			fmt.Println(-a, -b, -c)
+		}
+	}
+	
