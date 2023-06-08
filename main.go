@@ -170,3 +170,15 @@ func main() {
     seconds = seconds % 60
    fmt.Printf("%d hour %d minute %d second\n", hours, minutes, seconds)
 }
+package main
+
+import "fmt"
+//karra kara jadvali dastur
+func main() {
+	for n:=1; n<=10; n++ {
+		for m:=1; m<=10; m++ {
+			fmt.Printf("%v*%v=%v\t",m,n,m*n)
+		}
+		fmt.Println("  ")
+	}
+}
