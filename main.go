@@ -182,3 +182,17 @@ func main() {
 		fmt.Println("  ")
 	}
 }
+package main
+
+import "fmt"
+//userdan berilgan songacha karra kara jadvalini chiqarish
+func main() {
+	var a int
+	fmt.Scan(&a)
+	for n:=1; n<=a; n++ {
+		for m:=1; m<=a; m++ {
+			fmt.Printf("%v*%v=%v\t",m,n,m*n)
+		}
+		fmt.Println("  ")
+	}
+}
