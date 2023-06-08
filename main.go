@@ -96,3 +96,18 @@ func main()  {
 		fmt.Println("0 dan kichkina son kiritish mumkin emas")
 	}
 } 
+package main 
+
+import "fmt"
+
+//harfmi yoki harf emasmi kodi
+func main() {
+	var n rune
+	fmt.Scanf("%c", &n)
+
+	if (n >= 'A' && n <= 'Z') || (n >= 'a' && n <= 'z') {
+		fmt.Println("harf")
+	} else {
+		fmt.Println("harf emas")
+	}
+}
