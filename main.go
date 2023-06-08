@@ -196,3 +196,14 @@ func main() {
 		fmt.Println("  ")
 	}
 }
+package main
+
+import "fmt"
+//harflarni boshi va oxirini o'zgartiruvchi dastur
+func main() {
+	var input string
+	fmt.Scan(&input)
+
+	res := string(input[len(input)-1]) + string(input[1:len(input)-1]) + string(input[0])
+	fmt.Println(res)
+}
