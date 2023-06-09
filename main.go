@@ -371,3 +371,20 @@ func palindrome(str string) bool {
 	}
 	return true
 }
+package main
+
+import "fmt"
+// PALINDROME
+func main() {
+	num := 12321
+	fmt.Println(PALINDROME(num))
+}
+func PALINDROME(son int) bool {
+	str := strconv.Itoa(son)
+	for i := 0; i < len(str)/2; i++ {
+		if str[i] != str[len(str)-i-1] {
+			return false
+		}
+	}
+	return true
+}
