@@ -298,3 +298,35 @@ func main() {
 	str = strings.ToUpper(string(str[0])) + strings.ToUpper(string(str[len(str)-1]))
 	fmt.Println(str)
 }
+package main 
+
+import "fmt"
+// so'zda nechta a borligini chiqaruvchi dastur
+	func main() {
+		var str string
+		fmt.Scan(&str)
+		count := 0
+		for _, ch := range str {
+			if ch == 'a' {
+				count++
+			}
+		}
+		fmt.Println(count)
+	}
+package main 
+
+import "fmt"
+//so'zlarni indekslari toq bolsa katta harf bilan chiqaruvchi dastur
+func main() {
+	var input string
+	fmt.Print("So'zni kiriting: ")
+	fmt.Scan(&input)
+
+		for i := 0; i < len(input); i++ {
+			if i%2 == 0 {
+				fmt.Printf("%c", input[i]-32)
+			} else {
+				fmt.Printf("%c", input[i])
+			}
+		}
+	}
