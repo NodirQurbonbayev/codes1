@@ -273,3 +273,17 @@ import "fmt"
 		}
 		fmt.Printf("Juft=%v\n", count)
 }
+package main
+
+import "fmt"
+// kiritilgan string uzunligi 4 ga bo'linsa ikkinchi yarmini teskari qilib o'zgartirish
+	func main() {
+		var str, res string
+		fmt.Scan(&str)
+		if len(str)%4 == 0 {
+			for i := len(str) / 2; i < len(str); i++ {
+				res = string(str[i]) + res
+			}
+		}
+		fmt.Println(str[:len(str)/2] + res)
+	}
