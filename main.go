@@ -342,4 +342,18 @@ func main() {
 	if n > 0 && n <= len(str) {
 		fmt.Printf("%d-chi belgi: %c\n", n, str[n-1])
 	}
-}	
+}
+package main
+
+import "fmt"
+// Foydalanuvchi kiritgan string teskari tartibda ekranga chiqaring
+	func main() {
+		var str string
+		fmt.Scan(&str)
+		for i := len(str) - 1; i >= 0; i-- {
+			fmt.Print(string(str[i]))
+		}
+	}
+package main
+
+import "fmt"
