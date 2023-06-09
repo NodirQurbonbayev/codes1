@@ -287,3 +287,14 @@ import "fmt"
 		}
 		fmt.Println(str[:len(str)/2] + res)
 	}
+package main 
+
+import "fmt"
+//so'zni oxirgi va bosh harfni kattalashtirish
+func main() {
+	var str string
+	fmt.Scan(&str)
+
+	str = strings.ToUpper(string(str[0])) + strings.ToUpper(string(str[len(str)-1]))
+	fmt.Println(str)
+}
