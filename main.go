@@ -220,6 +220,8 @@ func main() {
 		number = (number - last) / 10
 		fmt.Println(res)
 	}
+
+}
 	//2.variant
 	func main() {
 		var number, res int
@@ -330,3 +332,14 @@ func main() {
 			}
 		}
 	}
+package main
+import "fmt"
+//Foydalanuvchi bitta gap va n son kiritadi. Siz esa, n chi belgini olib tashlang va shu gapni ekranga chiqaring.
+func main() {
+	var str string
+	var n int
+	fmt.Scan(&str, &n)
+	if n > 0 && n <= len(str) {
+		fmt.Printf("%d-chi belgi: %c\n", n, str[n-1])
+	}
+}	
