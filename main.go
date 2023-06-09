@@ -357,3 +357,17 @@ import "fmt"
 package main
 
 import "fmt"
+// palindrome
+func main() {
+	matn := "kiyik"
+	fmt.Println(palindrome(matn))
+}
+func palindrome(str string) bool {
+	for i, j := 0, len(str)-1; i < len(str)/2; i, j = i+1, j-1 {
+		if str[i] != str[j] {
+			return false
+			break
+		}
+	}
+	return true
+}
